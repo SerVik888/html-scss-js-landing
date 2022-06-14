@@ -2,6 +2,8 @@
 @import './components';
 @import './layout';
 
+
+
 .divider {
     height: 50px;
 }
@@ -9,7 +11,6 @@
 .container {
     max-width: 1180px;
     margin: auto;
-    // font-family: $mainFont;
 }
 
 .ui__title {
@@ -17,4 +18,64 @@
     margin-bottom: 1rem;
     margin-top: 2rem;
     text-decoration: underline;
+}
+
+.h1 {
+    @include h1();
+}
+
+.h2 {
+    @include h2();
+}
+
+.h3 {
+    @include h3($white, 3.2rem);
+    background-color: $gray;
+}
+
+.h4 {
+    @include h3($gray, 2.2rem, $mainFont);
+}
+
+.h5 {
+    @include h3();
+}
+
+.p1 {
+    @include lead()
+}
+
+.p2 {
+    @include p(#CACACA, 1.6rem, $mainFont);
+}
+
+.p3 {
+    @include p($white, 1.6rem, $mainFont);
+    background-color: $gray;
+}
+
+.p4 {
+
+    @include p($white, 1.4rem, $mainFont);
+    background-color: $gray;
+}
+
+.p5 {
+    @include p($gray, 1.6rem, $mainFont);
+}
+
+.p6 {
+    @include p(#DCDCDC, 1.6rem, $mainFont);
+}
+
+.p7 {
+    @include p($gray, 1.5rem, $mainFont);
+}
+
+.p8 {
+    @include p(#ABABAB, 1.5rem, $mainFont, 300);
+}
+
+.p9 {
+    @include p(#FF7A00, 1.8rem, $secondaryFont);
 }

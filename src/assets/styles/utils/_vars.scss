@@ -6,9 +6,18 @@ $lightGray: #E3E3E3;
 
 
 // fonts
-$mainFont: montserrat, sans-serif;
-$secondaryFont: cormorant sans-serif;
-$logoFont: inter, sans-serif;
-$buttonFont: sf-ui-text, sans-serif;
-$linkFont: lato, sans-serif;
+$mainFont: Montserrat,
+sans-serif;
+$secondaryFont: Cormorant,
+sans-serif;
+$logoFont: Inter,
+sans-serif;
+$buttonFont: sf-ui-text,
+sans-serif;
+$leadFont: Lato,
+sans-serif;
 
+// screens
+
+$tablet: 'min-width: 747px';
+$desktop: 'min-width: 1024px'

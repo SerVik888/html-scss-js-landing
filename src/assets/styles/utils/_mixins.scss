@@ -1,0 +1,38 @@
+@mixin h1($color: $black) {
+    font-size: 3.8rem;
+    color: $color;
+    font-family: $secondaryFont;
+
+    @media ($tablet) {
+        font-size: 4.8rem;
+    }
+}
+
+@mixin h2($color: $lightGray, $fontSize: 3.8rem) {
+    font-size: $fontSize;
+    color: $color;
+    font-family: $secondaryFont;
+
+    @media ($tablet) {
+        font-size: $fontSize + 1rem;
+    }
+}
+
+@mixin h3($color: $black, $fontSize: 2.2rem, $fontFamily: $secondaryFont) {
+    font-size: $fontSize;
+    color: $color;
+    font-family: $fontFamily;
+}
+
+@mixin p($color: $black, $fontSize: 1.6rem, $fontFamily: $mainFont, $fontWeight: 400) {
+    font-size: $fontSize;
+    color: $color;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+}
+
+@mixin lead($color: $black, $fontSize: 1.8rem) {
+    font-size: $fontSize;
+    color: $color;
+    font-family: $leadFont;
+}
